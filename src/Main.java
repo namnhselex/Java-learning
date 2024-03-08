@@ -8,9 +8,10 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        Shape shape = ShapeFactory.getShape("CIRCLE");
-        shape.draw();
-        ShapeFactory factory = new ShapeFactory();
-        factory.getShape("SQUARE").draw();
+        Gun gun=new Gun();
+        System.out.println("Start");
+        gun.fireInPool();
+        System.out.println("Game over");
+        System.out.println("Tocal bullet created: " + Bullet.count);
     }
 }
