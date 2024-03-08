@@ -2,11 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter file or folder path: ");
-        String path = scanner.nextLine();
-        FileCalculator fileCalculator = new FileCalculatorAdapter();
-        Client client = new Client(fileCalculator);
-        client.printFileSize(path);
+        Client client = new Client();
+        client.share("Chipi chipi, chapa chapa, dupi dupi, dapa dapa");
     }
 }

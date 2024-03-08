@@ -1,12 +1,6 @@
 public class Client {
-    private FileCalculator fileCalculator;
-
-    public Client(FileCalculator fileCalculator) {
-        this.fileCalculator = fileCalculator;
-    }
-
-    public void printFileSize(String path){
-        long size = fileCalculator.calculateSize(path);
-        System.out.println("Size: " + size);
+    public void share(String message) {
+        SocialMediaFacade socialMediaFacade = new SocialMediaFacade(new Facebook(), new LinkedIn(), new Twistter());
+        socialMediaFacade.share(message);
     }
 }
