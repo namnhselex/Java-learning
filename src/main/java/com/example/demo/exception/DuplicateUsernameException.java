@@ -1,8 +1,8 @@
 package com.example.demo.exception;
 
-public class DuplicateEmailException extends Exception{
+public class DuplicateUsernameException extends Exception{
 
-    public DuplicateEmailException(String message) {
+    public DuplicateUsernameException(String message) {
         super(message);
     }
 }
