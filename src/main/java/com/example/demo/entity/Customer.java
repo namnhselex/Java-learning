@@ -25,4 +25,8 @@ public class Customer {
     private String username;
     @Column(name="password")
     private String password;
+
+    public String getAuthority(){
+        return "CUSTOMER";
+    }
 }
